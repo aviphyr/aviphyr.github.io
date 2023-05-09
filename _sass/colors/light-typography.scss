@@ -8,14 +8,20 @@
   --mask-bg: #c1c3c5;
   --main-border-color: #f3f3f3;
 
+  %link-hover {
+    color: #2c2531 !important;
+    border-bottom: 1px solid #2c2531;
+    text-decoration: none;
+  }
+
   /* Common color */
   --text-color: #34343c;
   --text-muted-color: gray;
   --heading-color: black;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #9a9a9a;
-  --link-color: #2a408e;
-  --link-underline-color: #dee2e6;
+  --link-color: #9e5aa7;
+  --link-underline-color: #9e5aa7;
   --button-bg: #ffffff;
   --btn-border-color: #e9ecef;
   --btn-backtotop-color: #686868;

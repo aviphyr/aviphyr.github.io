@@ -12,15 +12,15 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 /* append your custom style below */
 
-@import url(https://fonts.googleapis.com/css?family=Figtree);
-@import url(https://fonts.googleapis.com/css?family=Mate);
+@import url(https://fonts.googleapis.com/css?family=Figtree:400,i,b);
+@import url(https://fonts.googleapis.com/css?family=Mate:400,i,b);
 
-*{
-  font-family: 'Figtree', sans-serif;;
+html *{
+  font-family: 'Figtree', sans-serif;
   font-feature-settings: "tnum";
 }
 
-.post-content p {
+.post-content p, em, b {
   font-family: 'Mate', serif;
 }
 
@@ -40,12 +40,21 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
   transform: none;
 }
 
+#sidebar a{
+  text-transform: lowercase;
+}
+
 #topbar-wrapper{
   border: none;
 }
 
 #topbar{
   border-bottom: 1px solid var(--search-wrapper-border-color);
+}
+
+#panel-wrapper .post-tag:hover{
+  background-color: #502757;
+  border-color: #502757;
 }
 
 /*
