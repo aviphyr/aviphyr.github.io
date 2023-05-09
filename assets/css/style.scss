@@ -1,0 +1,73 @@
+---
+---
+
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+*/
+
+@import "{{ site.theme }}";
+
+/* append your custom style below */
+
+@import url(https://fonts.googleapis.com/css?family=Figtree);
+@import url(https://fonts.googleapis.com/css?family=Mate);
+
+*{
+  font-family: 'Figtree', sans-serif;;
+  font-feature-settings: "tnum";
+}
+
+.post-content p {
+  font-family: 'Mate', serif;
+}
+
+#archives .year::after{
+  left: 9.5px;
+}
+
+.sidebar-bottom > a:nth-child(5){
+  display: none;
+}
+
+.share-icons > a:nth-child(2){
+  display: none;
+}
+
+#sidebar #avatar img:hover{
+  transform: none;
+}
+
+#topbar-wrapper{
+  border: none;
+}
+
+#topbar{
+  border-bottom: 1px solid var(--search-wrapper-border-color);
+}
+
+/*
+
+.#sidebar{
+  background: linear-gradient(0deg, rgba(6,6,6,1) 0%, rgba(23,2,25,1) 100%);
+}
+
+#topbar-wrapper{
+  background: #160c18;
+}
+
+#topbar{
+  background:#160c18;
+}
+
+footer{
+  background:#160c18;
+}
+
+#main-wrapper{
+  background:#160c18;
+}
+
+*/
