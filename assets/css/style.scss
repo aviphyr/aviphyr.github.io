@@ -20,7 +20,8 @@ html *{
   font-feature-settings: "tnum";
 }
 
-.post-content p, em, b {
+/* this CANNOT be how CSS works... */
+.post-content p, .post-content em, .post-content b, .post-content li {
   font-family: 'Mate', serif;
 }
 
@@ -28,16 +29,12 @@ html *{
   left: 9.5px;
 }
 
-.sidebar-bottom > a:nth-child(5){
-  display: none;
-}
-
-.share-icons > a:nth-child(2){
-  display: none;
-}
-
 #sidebar #avatar img:hover{
   transform: none;
+}
+
+#sidebar #avatar > a{
+  border: none;
 }
 
 #sidebar a{
@@ -48,13 +45,33 @@ html *{
   border: none;
 }
 
+#panel-wrapper .panel-heading{
+  text-transform: lowercase;
+}
+
 #topbar{
   border-bottom: 1px solid var(--search-wrapper-border-color);
 }
 
+#topbar p, #topbar span {
+  text-transform: lowercase;
+}
+
+
 #panel-wrapper .post-tag:hover{
   background-color: #502757;
   border-color: #502757;
+}
+
+.footnotes{
+  border-top: 1px solid var(--search-wrapper-border-color);
+  font-size: 0.9rem;
+}
+
+.post-tag:hover {
+  border-bottom: none;
+  text-decoration: none;
+  color: rgb(200, 148, 212)
 }
 
 /*
