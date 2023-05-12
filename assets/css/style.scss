@@ -12,7 +12,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 /* append your custom style below */
 
-@import url(https://fonts.googleapis.com/css?family=Figtree:400,i,b);
+@import url(https://fonts.googleapis.com/css?family=Figtree:300,500,i,b);
 @import url(https://fonts.googleapis.com/css?family=Mate:400,i,b);
 
 html *{
@@ -20,9 +20,41 @@ html *{
   font-feature-settings: "tnum";
 }
 
+/* writing class */
+.prose{
+  text-indent: 2rem;
+}
+
+.prose p{
+  margin-bottom: 0.2rem;
+}
+
+/* title & subtitle */
+.title{
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: .5rem !important;
+}
+
+.subtitle{
+  margin-top: unset !important;
+  font-weight: bold;
+  color: var(--text-muted-color);
+  font-size: 1.5rem;
+}
+
 /* this CANNOT be how CSS works... */
-.post-content p, .post-content em, .post-content b, .post-content li {
+.post-content p, .post-content em, .post-content strong, .post-content li, .post-content a {
   font-family: 'Mate', serif;
+}
+
+#access-lastmod a{
+  font-family: 'Figtree', sans-serif;
+}
+
+.post-content{
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 #archives .year::after{
@@ -73,6 +105,41 @@ html *{
   text-decoration: none;
   color: rgb(200, 148, 212)
 }
+
+.post-tail-bottom{
+  padding-top: 1rem !important;
+  margin:unset !important;
+}
+
+.code-header::before{
+  height: unset;
+}
+
+::selection {
+  background: #000000;
+}
+
+/*
+.meta-wrapper-guy{
+  display:flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-tail-wrapper{
+  padding-bottom: 0.5rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+.mb-3{
+  margin:unset !important;
+}*/
 
 /*
 
