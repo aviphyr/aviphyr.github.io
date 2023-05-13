@@ -19,7 +19,7 @@
   --text-muted-color: rgb(107, 116, 124);
   --heading-color: #cccccc;
   --blockquote-border-color: rgb(66, 66, 66);
-  --blockquote-text-color: rgb(117, 117, 117);
+  --blockquote-text-color: rgb(161, 161, 161);
   --link-color: rgb(143, 116, 243);
   --link-underline-color: rgb(143, 116, 243);
   --button-bg: rgb(20, 19, 24);
@@ -42,8 +42,8 @@
   /* Sidebar */
   --sidebar-bg: linear-gradient(0deg, rgba(6,6,6,1) 0%, rgba(23, 11, 25,1) 100%);
   --sidebar-muted-color: #6d6c6b;
-  --sidebar-active-color: rgb(255, 255, 255, 0.8);
-  --nav-cursor-color: rgb(183, 182, 182);
+  --sidebar-active-color: rgba(219, 219, 219, 0.8);
+  --nav-cursor-color: rgb(183, 182, 182, 0.8);
   --sidebar-btn-bg: rgb(117, 116, 116, 0.2);
 
   /* Topbar */

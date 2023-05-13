@@ -12,12 +12,24 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 /* append your custom style below */
 
+/* Main fonts */
 @import url(https://fonts.googleapis.com/css?family=Figtree:300,500,i,b);
 @import url(https://fonts.googleapis.com/css?family=Mate:400,i,b);
 
 html *{
   font-family: 'Figtree', sans-serif;
   font-feature-settings: "tnum";
+}
+
+/* Highlight override */
+::selection {
+  background: #000000;
+}
+
+
+/* toast */
+#notification.toast.show{
+  background-color: rgba(117, 117, 117, 0.5);
 }
 
 /* writing class */
@@ -43,18 +55,28 @@ html *{
   font-size: 1.5rem;
 }
 
-/* this CANNOT be how CSS works... */
-.post-content p, .post-content em, .post-content strong, .post-content li, .post-content a {
-  font-family: 'Mate', serif;
+.dynamic-title{
+  text-transform: lowercase;
+  font-weight: 300;
 }
 
-#access-lastmod a{
-  font-family: 'Figtree', sans-serif;
+/* post content fonts (this CANNOT be how CSS works...)*/
+.goodfont p:not(blockquote p), .goodfont em, .goodfont strong, .goodfont li, .goodfont a, .post-content p{
+  font-family: 'Mate', serif;
 }
 
 .post-content{
   font-size: 1.2rem;
   font-weight: 100;
+}
+
+/* tweaks */
+/*#sidebar .site-title a{
+  font-weight: 300;
+}*/
+
+#sidebar .nav-link{
+  font-weight: unset;
 }
 
 #archives .year::after{
@@ -77,6 +99,10 @@ html *{
   border: none;
 }
 
+#topbar-title{
+  text-transform: lowercase;
+}
+
 #panel-wrapper .panel-heading{
   text-transform: lowercase;
 }
@@ -88,7 +114,6 @@ html *{
 #topbar p, #topbar span {
   text-transform: lowercase;
 }
-
 
 #panel-wrapper .post-tag:hover{
   background-color: #502757;
@@ -115,11 +140,7 @@ html *{
   height: unset;
 }
 
-::selection {
-  background: #000000;
-}
-
-/*
+/* Misc
 .meta-wrapper-guy{
   display:flex;
   align-items: center;
@@ -132,35 +153,4 @@ html *{
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-
-
-.mb-3{
-  margin:unset !important;
-}*/
-
-/*
-
-.#sidebar{
-  background: linear-gradient(0deg, rgba(6,6,6,1) 0%, rgba(23,2,25,1) 100%);
-}
-
-#topbar-wrapper{
-  background: #160c18;
-}
-
-#topbar{
-  background:#160c18;
-}
-
-footer{
-  background:#160c18;
-}
-
-#main-wrapper{
-  background:#160c18;
-}
-
 */
