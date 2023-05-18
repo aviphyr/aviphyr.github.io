@@ -61,9 +61,13 @@ html *{
 }
 
 /* post content fonts (this CANNOT be how CSS works...)*/
-.goodfont p:not(blockquote p), .goodfont em, .goodfont strong, .goodfont li, .goodfont a, .post-content p{
+.goodfont p, .goodfont em, .goodfont strong, .goodfont li, .goodfont a, .post-content p{
   font-family: 'Mate', serif;
 }
+
+/*blockquote p, a{
+  font-family: 'Figtree', sans-serif !important;
+}*/
 
 .post-content{
   font-size: 1.2rem;
