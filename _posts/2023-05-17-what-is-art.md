@@ -34,7 +34,7 @@ It explores the limits of our understanding and senses. From architecture to pot
 _Impression Sunrise by Monet_
 
 ## the eye of the beholder: looking pretty for the sake of it
-Of course, not all art needs a profound look at humanity. Sometimes art is just there to be looked at and appreciated. In fact, it’s possible to argue that everything humans do is some form of art. Whenever we design or engineer something, we’re being artistic by principle. Whenever we speak, we do so with musical cadences and inflection. Even our movements have a rhythm and essence that are almost dance-like—it's something we take for granted, honestly. 
+Of course, not all art needs to be a profound look at humanity. Sometimes art is just there to be looked at and appreciated. In fact, it’s possible to argue that everything humans do is some form of art. Whenever we design or engineer something, we’re being artistic by principle. Whenever we speak, we do so with musical cadences and inflection. Even our movements have a rhythm and essence that are almost dance-like—it's something we take for granted, honestly. 
 
 It's easier to see when it's on something mechanical, like say, an android. The sheer artistry of even designing such a thing is enough to tell you. Just look at any of Boston Dynamic's robots. 
 
