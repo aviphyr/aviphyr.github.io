@@ -5,6 +5,8 @@ order: 4
 ---
 
 > site's still under construction. that tell you enough about me?
+{: .prompt-info }
+
 
 I like to explore everything from film to writing to digital art. sometimes I make them, usually 3D. I'm trying to learn 2D, though. 
 

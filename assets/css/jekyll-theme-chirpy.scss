@@ -1,0 +1,329 @@
+---
+---
+
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* == FONT == */
+
+@import url(https://fonts.googleapis.com/css?family=figtree:300,500,i,b);
+@import url(https://fonts.googleapis.com/css?family=mate:400,i,b);
+
+/*  == BASE == */
+html * {
+  font-family: 'figtree', sans-serif;
+  font-feature-settings: "tnum";
+}
+
+/* == COLORS!!!!!!!!!!!!! == */
+:root {
+  --text-color: rgb(221, 221, 221) !important;
+  --heading-color: rgb(221, 221, 221) !important;
+  --sidebar-border-color: rgba(0,0,0,0) !important; /* unset */
+  
+  /*  background colors */
+  --main-bg: rgb(13, 10, 13) !important;
+  --secondary-bg: rgb(58, 49, 71);
+  --post-bg: rgba(0,0,0,0); /* unset */
+  --empty-bg: rgba(0,0,0,0); /* unset */
+  --card-header-bg: rgba(0,0,0,0) !important;
+
+  /*  link and tag colors */
+  --link-color: rgb(143, 116, 243) !important;
+  --link-color-hover: rgb(221, 113, 76) !important;
+  --tag-hover: rgba(206, 130, 85, 0.1) !important;
+  --tag-active: rgb(221, 113, 76)  !important;
+  --post-tag-hover-text: rgb(200,148,212);
+  --tag-border: var(--btn-border-color) !important;
+
+  /* sidebar */
+  --bg-gradient-start: var(--main-bg);
+  --bg-gradient-end: rgba(23, 11, 25,1);
+  --sidebar-hover-bg: rgb(48, 32, 51) !important;
+  --sidebar-active-bg: rgb(29, 19, 31) !important;
+
+  /*  additional color variables */
+  --selection-bg: rgba(178, 117, 80, 0.5);
+  --toast-bg: rgba(117, 117, 117, 0.5);
+  --search-wrapper-border-color: rgb(50,50,50);
+  
+}
+
+/* light mode. this may be broken.  */
+html[data-mode="light"] {
+  --text-color: rgb(37, 37, 37) !important;
+  --heading-color: rgb(19, 19, 19) !important;
+  --sidebar-border-color: rgba(0,0,0,0) !important; /* unset */
+
+  /*  background colors */
+  --main-bg: rgb(245, 245, 245) !important;
+  --secondary-bg: rgb(182, 167, 202);
+  --post-bg: rgba(3, 3, 3, 0); /* unset */
+  --empty-bg: rgba(0,0,0,0); /* unset */
+
+  /*  link and tag colors */
+  --link-color: rgb(143, 116, 243) !important;
+  --link-color-hover: rgb(221, 113, 76) !important;
+  --tag-hover: rgba(201, 184, 174, 0.3) !important;
+  --tag-active: rgb(221, 113, 76)  !important;
+  --post-tag-hover-text: rgb(200,148,212);
+  --tag-border: var(--btn-border-color) !important;
+
+  /* sidebar */
+  --bg-gradient-start: var(--main-bg);
+  --bg-gradient-end: rgb(232, 218, 236);
+  --sidebar-hover-bg: rgb(193, 180, 196) !important;
+  --sidebar-active-bg: rgb(176, 163, 179) !important;
+
+  /*  additional color variables */
+  --selection-bg: rgba(178, 117, 80, 0.5);
+  --toast-bg: rgba(117, 117, 117, 0.5);
+  --search-wrapper-border-color: rgb(189, 189, 189);
+  --main-border-color: rgb(185, 185, 185);
+  --search-border-color: rgb(185, 185, 185);
+}
+
+
+/* == LAYOUT == */
+/*  sidebar */
+#sidebar {
+  background: linear-gradient(0deg, var(--bg-gradient-start) 20%, var(--bg-gradient-end) 100%);
+}
+
+#sidebar ul li.nav-item a.nav-link {
+  font-weight: unset;
+}
+
+#sidebar a {
+  text-transform: lowercase;
+}
+/*  avatar tweaks */
+#sidebar #avatar img:hover {
+  transform: none;
+}
+#sidebar #avatar {
+  box-shadow: none;
+}
+
+/*  title and subtitle */
+#sidebar .site-title {
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem !important;
+}
+
+#sidebar .site-subtitle {
+  margin-top: unset !important;
+  font-weight: lighter;
+  color: var(--text-muted-color);
+  font-size: 1.1rem;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+
+
+/* bottom buttons*/
+#sidebar .sidebar-bottom #mode-toggle:not(:focus-visible), #sidebar .sidebar-bottom a:not(:focus-visible) {
+  box-shadow: unset;
+}
+
+#sidebar .sidebar-bottom #mode-toggle, #sidebar .sidebar-bottom a {
+  color: unset;
+  background-color: unset;
+}
+
+/* section titles */
+.dynamic-title {
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+/*  archives */
+#archives .year::after {
+  left: 9.5px;
+}
+
+/*  topbar  */
+#topbar-wrapper {
+  background-color: unset;
+  border: none;
+}
+
+#topbar-title {
+  text-transform: lowercase;
+}
+#topbar p,
+#topbar span {
+  text-transform: lowercase;
+}
+#topbar {
+  border-bottom: 1px solid var(--search-wrapper-border-color);
+}
+
+/*  panel heading */
+#panel-wrapper .panel-heading {
+  text-transform: lowercase;
+}
+
+/*  main wrapper */
+#main-wrapper {
+  background-color: var(--main-bg);
+}
+
+/*  post preview */
+.post-preview {
+  background: var(--post-bg);
+}
+
+
+/* == GENERAL TYPOGRAPHY == */
+.title{
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: .5rem !important;
+}
+
+.subtitle{
+  margin-top: unset !important;
+  font-weight: bold;
+  color: var(--text-muted-color);
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  transition: 0.5s;
+}
+
+/*  table of contents links */
+#toc-wrapper ul .is-active-link {
+  color: var(--link-color) !important;
+}
+#toc-wrapper ul .is-active-link::before {
+  background-color: var(--link-color) !important;
+}
+#toc-wrapper ul .toc-link:hover {
+  color: var(--link-color-hover) !important;
+}
+
+
+/*  == PROSE == */
+
+.prose p,
+.prose em,
+.prose strong,
+.prose li,
+.prose a,
+.post-content p {
+  font-family: 'mate', serif;
+}
+
+.post-content {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.prose {
+  text-indent: 2rem;
+}
+.prose p {
+  margin-bottom: 0.2rem;
+}
+
+hr {
+  width: 80%;
+  margin:16px auto;
+}
+
+.prose hr {
+  text-align: center;
+  line-height: 1px;
+  height: 1px; 
+  font-size: 1.3em; 
+  border-width: 1px 0; 
+  border-style: solid;
+  overflow: visible;
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.prose hr:after {
+  content: "§"; 
+  color: var(--main-border-color);
+  background-color: var(--main-bg);
+  display: inline; 
+  padding: 0 0.2em; 
+}
+
+
+/* == BUTTONS == */
+
+.btn.btn-outline-primary:not(.disabled):hover {
+  border-color: var(--text-muted-color) !important;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: var(--secondary-bg);
+  border-color: var(--secondary-bg);
+}
+
+.btn:hover {
+  background-color: var(--secondary-bg);
+}
+
+/* == LINKS AND TAGS == */
+
+/*  general hover links */
+.post-tail-wrapper .post-meta a:not(:hover),
+.content a:not(.img-link) {
+  border-bottom: 1px solid var(--link-color);
+}
+
+/* == MISC == */
+
+/*  footnotes */
+.footnotes {
+  border-top: 1px solid var(--search-wrapper-border-color);
+  font-size: 0.9rem;
+}
+
+/*  post tail bottom */
+.post-tail-bottom {
+  padding-top: 1rem !important;
+  margin: unset !important;
+}
+
+/*  code header */
+.code-header::before {
+  height: unset;
+}
+
+/*  selection highlight */
+::selection {
+  background: var(--selection-bg);
+}
+
+/*  toast notification */
+#notification.toast.show {
+  background-color: var(--toast-bg);
+}

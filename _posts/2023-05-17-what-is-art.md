@@ -4,6 +4,7 @@ subtitle: "mediums & messages"
 date: 2023-05-17 18:00:00 -500
 categories: [article]
 tags: [art, philosophy]
+image: assets/img/murderofcrows.jpg
 ---
 
 > You can also read this on [Substack](https://aviphyr.substack.com/)

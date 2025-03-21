@@ -1,0 +1,35 @@
+search:
+  hint: search
+  cancel: Cancel
+  no_results: no results exist. maybe somewhere else, they do.
+
+panel:
+  lastmod: recently updated
+  trending_tags: tags
+  toc: contents
+
+copyright:
+  license:
+    template: :LICENSE_NAME by the author.
+    name: All Rights Reserved
+    link: ''
+
+  brief: Some rights reserved.
+  verbose: >-
+    Except where otherwise noted, the blog posts and creative works on this site are copyrighted by the author.
+    No part of these works may be reproduced, distributed, or transmitted in any form or by any means,
+    without the prior written permission of the author.
+
+    This site uses the Jekyll Chirpy theme © 2019 Cotes Chung, licensed under the MIT License.
+
+meta: Using the :PLATFORM theme :THEME.
+
+not_found:
+  statement: that doesn't exist, at least not here. maybe try a different timeline?
+
+notification:
+  update_found: new content!
+  update: Update
+
+post:
+    relate_posts: further reading
