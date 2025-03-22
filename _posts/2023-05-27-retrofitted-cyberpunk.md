@@ -4,7 +4,7 @@ subtitle: "aesthetics & themes"
 date: 2023-05-27 15:00:00 -500
 categories: [article]
 tags: [art, philosophy]
-image: assets/img/sprawl.png
+image: assets/img/sprawl2.jpg
 ---
 
 This last week, I was listening to episode 102 of Brandon Sanderson's podcast Intentionally Blank when an interesting conversation arose:

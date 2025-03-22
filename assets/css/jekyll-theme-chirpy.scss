@@ -48,9 +48,12 @@ html * {
 
   /*  additional color variables */
   --selection-bg: rgba(178, 117, 80, 0.5);
-  --toast-bg: rgba(117, 117, 117, 0.5);
+  --toast-bg: rgba(255, 255, 255, 0.5);
   --search-wrapper-border-color: rgb(50,50,50);
-  
+  --bs-btn-color: rgb(143, 116, 243) !important;
+  --bs-btn-border-color: rgb(143, 116, 243) !important;
+  --bs-btn-hover-border-color: rgb(121, 88, 241) !important;
+  --bs-btn-active-border-color: rgb(121, 88, 241) !important;
 }
 
 /* light mode. this may be broken.  */
