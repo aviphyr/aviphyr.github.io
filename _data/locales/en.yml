@@ -11,7 +11,7 @@ panel:
 copyright:
   license:
     template: :LICENSE_NAME by the author.
-    name: All Rights Reserved
+    name: Some Rights Reserved
     link: '/'
 
   brief: Some rights reserved.
